@@ -1,0 +1,205 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "d736182be2a63e8150ce16fe60c9adfd",
+    "content-hash": "867e999c15925efed7fe775c7242c7e6",
+    "packages": [
+        {
+            "name": "pimple/pimple",
+            "version": "v3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silexphp/Pimple.git",
+                "reference": "a30f7d6e57565a2e1a316e1baf2a483f788b258a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/a30f7d6e57565a2e1a316e1baf2a483f788b258a",
+                "reference": "a30f7d6e57565a2e1a316e1baf2a483f788b258a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Pimple": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Pimple, a simple Dependency Injection Container",
+            "homepage": "http://pimple.sensiolabs.org",
+            "keywords": [
+                "container",
+                "dependency injection"
+            ],
+            "time": "2015-09-11 15:10:35"
+        },
+        {
+            "name": "smarty/smarty",
+            "version": "v3.1.29",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smarty-php/smarty.git",
+                "reference": "35480f10e7ce9b0fdaf23d3799d7b79463919b1e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/35480f10e7ce9b0fdaf23d3799d7b79463919b1e",
+                "reference": "35480f10e7ce9b0fdaf23d3799d7b79463919b1e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "libs/Smarty.class.php",
+                    "libs/SmartyBC.class.php",
+                    "libs/sysplugins/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Monte Ohrt",
+                    "email": "monte@ohrt.com"
+                },
+                {
+                    "name": "Uwe Tews",
+                    "email": "uwe.tews@googlemail.com"
+                },
+                {
+                    "name": "Rodney Rehm",
+                    "email": "rodney.rehm@medialize.de"
+                }
+            ],
+            "description": "Smarty - the compiling PHP template engine",
+            "homepage": "http://www.smarty.net",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2015-12-21 01:57:06"
+        },
+        {
+            "name": "zonuexe/objectsystem",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BaguettePHP/php-objectsystem.git",
+                "reference": "fa15de742a3227de3895825bfa173a6b049a248f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BaguettePHP/php-objectsystem/zipball/fa15de742a3227de3895825bfa173a6b049a248f",
+                "reference": "fa15de742a3227de3895825bfa173a6b049a248f",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phploc/phploc": "~2.0.6",
+                "phpmd/phpmd": "@stable",
+                "phpunit/phpunit": "~4.3.5",
+                "theseer/phpdox": "~0.7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Teto\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "USAMI Kenta",
+                    "email": "tadsan@zonu.me"
+                }
+            ],
+            "description": "Object system for PHP",
+            "time": "2015-02-02 17:43:33"
+        },
+        {
+            "name": "zonuexe/simple-routing",
+            "version": "0.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BaguettePHP/simple-routing.git",
+                "reference": "d23f28f4a799678a9f8d038c1a6cbc0d198957eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BaguettePHP/simple-routing/zipball/d23f28f4a799678a9f8d038c1a6cbc0d198957eb",
+                "reference": "d23f28f4a799678a9f8d038c1a6cbc0d198957eb",
+                "shasum": ""
+            },
+            "require": {
+                "zonuexe/objectsystem": "~0.2.1"
+            },
+            "require-dev": {
+                "phploc/phploc": "~2.1.4",
+                "phpmd/phpmd": "@stable",
+                "phpunit/phpunit": "~4.8.6",
+                "satooshi/php-coveralls": "dev-master",
+                "theseer/phpdox": "~0.8.1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Teto\\Routing\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "USAMI Kenta",
+                    "email": "tadsan@zonu.me"
+                }
+            ],
+            "description": "Simple Web Application Router",
+            "keywords": [
+                "router"
+            ],
+            "time": "2015-10-01 05:57:56"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

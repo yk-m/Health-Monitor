@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="stylesheets/dashboard.css">
+	<link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/cupertino/jquery-ui.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/dashboard/chart/Chart.min.js"></script>
+	<script type="text/javascript" src="js/dashboard/chart/Chart.Scatter.min.js"></script>
+	<script type="text/javascript" src="js/dashboard/chart/Drawer.js"></script>
+
+	<script type="text/javascript" src="js/dashboard/Calendar.js"></script>
+	<script type="text/javascript" src="js/dashboard/init.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Health monitor</h1>
+		<button type="button" value="add">+</button>
+	</header>
+	<div class="wrapper">
+
+		<section class="calendar">
+			<div class="controller">
+				<ul>
+					<li class="prev"><a href="javaScript:void(0)" title="Prev"><<</a></li>
+					<li class="next"><a href="javaScript:void(0)" title="Next">>></a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="graph_month">
+			<h1>Weight</h1>
+			<canvas id="weight"></canvas>
+		</section>
+
+	</div>
+
+	<div class="modal-background"></div>
+	<section class="modal" id="input_area">
+		<div class="modal-content">
+			<h1>February 2, 2016</h1>
+			<div class="modal-body">
+				<form action="" method="post" accept-charset="utf-8">
+					<div class="horizontal-form">
+						<input type="text" name="weight" value="" placeholder="Weight"><span>kg</span><input type="submit" name="" value="Add">
+					</div>
+				</form>
+				<button class="modal-close"><span>Close</span></button>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>

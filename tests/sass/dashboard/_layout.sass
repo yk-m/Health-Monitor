@@ -1,0 +1,88 @@
+$header-content-height: calcHeight(1)
+$header-height: $header-content-height + $vertical-span*2
+
+$calendar-width: calcWidth(4)
+$table-cell-size: $calendar-width / 7
+$daily-width: calcWidth(6)
+$graph-width: calcWidth(8)
+
+$title-height: calcHeight(1) + ( $vertical-span * 2 )
+
+header
+	height: $header-height
+	width: 100%
+
+	position: fixed
+	top: 0
+	left: 0
+
+.wrapper
+	width: $width
+	margin: $header-height + calcHeight(1) auto
+
+	padding: $default-padding
+
+	+clearfix
+
+	& > section
+		float: left
+
+
+.calendar
+	width: $calendar-width
+	margin: 0 $horizontal-span 0 0
+	padding: 0
+
+	table
+		margin-top: -$title-height
+
+		caption
+			$span-height: $title-height/6
+			margin: $span-height 0
+
+			span
+				display: block
+				margin: 0
+				padding: 0
+
+				&.caption_year
+					line-height: $span-height
+				&.caption_month
+					line-height: $span-height*3
+
+		td, th
+			height: $table-cell-size
+			width: $table-cell-size
+			margin: $vertical-span 0
+			padding: 0
+
+	ul
+		+clearfix
+		height: $title-height
+
+		margin: 0
+		padding: 0
+		list-style-type: none
+		text-align: center
+
+		li
+			display: block
+			&.prev
+				float: left
+
+			&.next
+				float: right
+
+
+.graph_month
+	width: $graph-width
+	margin: 0 0 calcHeight(1) 0
+	padding: 0 $horizontal-span
+
+	h1
+		margin: 0
+		line-height: $title-height
+
+	#weight
+		width:  $graph-width - $horizontal-span*2
+		height: calcHeight(5)

@@ -1,0 +1,22 @@
+#input_area
+	span
+		display: inline-block
+		margin: 0 $horizontal-span 0 0
+		width: calcWidth(1)
+
+	input[type="text"]
+		width: calcWidth(3)
+
+	input[name="add"]
+		margin-right: 0
+
+	input[name="delete"]
+		display: none
+
+	&.deletable
+		input[name="add"]
+			margin-right: $horizontal-span
+
+		input[type="button"]
+			width: calcWidth(1)
+			padding: $vertical-span 0

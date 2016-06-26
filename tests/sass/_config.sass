@@ -1,0 +1,121 @@
+
+/// Fonts
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans)
+@import url(https://fonts.googleapis.com/css?family=Raleway:300)
+
+$font-path: "../fonts"
+@import "elegant-font/elegant-font"
+
+$base-font-size: 15px
+$header-font-family: 'Josefin Sans', sans-serif
+$body-font-family:   'Raleway',      sans-serif
+$icon-font-family:   'ElegantIcons', sans-serif
+
+$font-size-largest: 3
+$font-size-step: 0.85
+
+=setFont( $heading-level )
+	@if $heading-level == 0
+		font: normal 1rem $body-font-family
+
+	@else if $heading-level == 1
+		font: normal $font-size-largest + rem $header-font-family
+
+	@else
+		font: normal calcFontsize( $heading-level ) $header-font-family
+
+@function calcFontsize( $heading-level )
+	$font-size: $font-size-largest
+	@if $heading-level == 0
+		@return 1rem
+	@if $heading-level == 1
+		@return $font-size-largest + rem
+
+	@for $i from 2 through $heading-level
+		$font-size: $font-size * $font-size-step
+	@return $font-size + rem
+
+
+
+/// Colors
+$pink: #f7cac9
+$blue: #91a8d0
+
+$light-color: #F9F4E8
+$dark-color: #555550
+
+
+
+/// Grid System
+$width: 980px
+$horizontal-span: 20px
+$vertical-span: 12px
+
+$default-padding: $vertical-span $horizontal-span
+
+$unit-width: 60px
+$unit-height: 36px
+
+@function calcWidth( $column-num )
+	@return ( $unit-width + $horizontal-span ) * $column-num - $horizontal-span
+
+@function calcHeight( $row-num )
+	@return ( $unit-height + $vertical-span ) * $row-num - $vertical-span
+
+
+
+/// Animation
+=verticalAnimation( $duration: 100s )
+	-webkit-animation: bgscroll-vertical $duration linear infinite
+	animation: bgscroll-vertical $duration linear infinite
+
+=horizontalAnimation( $duration: 100s )
+	-webkit-animation: bgscroll-horizontal $duration linear infinite
+	animation: bgscroll-horizontal $duration linear infinite
+
+@-webkit-keyframes bgscroll-vertical
+	0%
+		background-position: 0 0
+	100%
+		background-position: 0 -150em
+
+@keyframes bgscroll-vartical
+	0%
+		background-position: 0 0
+	100%
+		background-position: 0 -150em
+
+
+@-webkit-keyframes bgscroll-horizontal
+	0%
+		background-position: 0 0
+	100%
+		background-position: -200em 0
+
+@keyframes bgscroll-horizontal
+	0%
+		background-position: 0 0
+	100%
+		background-position: -200em 0
+
+
+
+/// Mixins
+=shadow()
+	box-shadow: 5px 5px -5px -5px rgba(0, 0, 0, .1)
+
+=radius()
+	+border-radius(2px)
+
+
+
+/// Clear Fix
+/// @access public
+=clearfix()
+
+	*zoom: 1
+
+	&:after
+		content: ""
+		display: table
+		clear: both

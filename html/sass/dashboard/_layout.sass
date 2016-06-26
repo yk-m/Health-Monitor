@@ -1,0 +1,52 @@
+header
+	height: $header-height
+	width: 100%
+
+	position: fixed
+	top: 0
+	left: 0
+
+.wrapper
+	width: $width
+
+	+clearfix
+
+	& > section
+		float: left
+
+
+.calendar
+	width: $calendar-width
+	table
+		caption
+			span
+				display: block
+
+		td, th
+			height: $calendar-cell-size
+			width: $calendar-cell-size
+
+	ul
+		+clearfix
+		height: $title-height
+
+		li
+			display: block
+
+			a
+				height: $title-height
+				width: $title-height
+
+			&.prev
+				float: left
+
+			&.next
+				float: right
+
+
+.graph_month
+	width: $graph-width
+
+	#weight
+		width:  $graph-width - $horizontal-span*2
+		height: calcHeight(5)

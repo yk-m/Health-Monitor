@@ -1,0 +1,12 @@
+# ErrorDocument 403 /Transfer.php?Command=err&eno=403
+# ErrorDocument 404 /Transfer.php?Command=err&eno=404
+# ErrorDocument 500 /Transfer.php?Command=err&eno=500
+# ErrorDocument 503 /Transfer.php?Command=err&eno=503
+
+SetEnv TZ Asia/Tokyo
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule !\.(pdf|ico|gif|jpg|png|css|html|xml)$ index.php

@@ -1,0 +1,48 @@
+input
+	display: block
+	width: 100%
+	margin: $vertical-span 0
+	padding: $vertical-span $horizontal-span
+
+	background: rgba( $light-color, .5 )
+	border: 1px solid transparent
+	outline: none
+	+radius
+
+	+setFont( 0 )
+
+	+input-placeholder
+		color: rgba( $dark-color, .5 )
+
+	&:focus
+		border: 1px solid rgba( $light-color, .6 )
+		+box-shadow( 0 0 10px 5px rgba( $light-color, .5 ) )
+
+input[type="submit"]
+	width: calcWidth(2)
+
+	color: $dark-color
+	background: rgba( $light-color, .6 )
+
+
+.horizontal-form
+	*
+		display: inline-block
+		margin: 0 $horizontal-span 0 0
+
+		&:last-child
+			margin-right: 0
+
+.name
+	input
+		width: calcWidth(3)
+
+.modal
+	.horizontal-form
+		span
+			display: inline-block
+			margin: 0 $horizontal-span 0 0
+			width: calcWidth(1)
+
+		input[type="text"]
+			width: calcWidth(3)

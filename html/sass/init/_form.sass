@@ -1,0 +1,62 @@
+input
+	display: block
+	width: 100%
+	margin: $vertical-span 0
+	padding: $vertical-span $horizontal-span
+
+	background: rgba( $light-color, .5 )
+	border: 1px solid transparent
+	outline: none
+	+radius
+
+	+setFont( 0 )
+
+	+input-placeholder
+		color: rgba( $dark-color, .5 )
+
+	&:focus
+		border: 1px solid rgba( $light-color, .6 )
+		+box-shadow( 0 0 10px 5px rgba( $light-color, .5 ) )
+
+
+input[type="button"]
+	width: calcWidth(2)
+
+	color: $dark-color
+	background: rgba( $light-color, .6 )
+
+
+input[type="submit"], input[type="button"]
+	cursor: pointer
+
+
+.horizontal-form
+	*
+		display: inline-block
+		margin: 0 $horizontal-span 0 0
+
+		&:last-child
+			margin-right: 0
+
+
+.loading
+	display: none
+
+	span
+		position: absolute
+		clip: rect(0, 0, 0, 0)
+
+	&:after
+		display: block
+		width: 30px
+		height: 30px
+		line-height: 30px
+
+		margin: 0 calcWidth(2)/2-15 0
+
+		content: $icon_loading
+		font-family: $icon-font-family
+		font-size: 30px
+		color: $light-color
+
+		+spin

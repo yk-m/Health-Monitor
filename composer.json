@@ -1,0 +1,7 @@
+{
+    "require": {
+        "pimple/pimple": "~3.0",
+        "zonuexe/simple-routing": "^0.4.1",
+        "smarty/smarty": "3.1.29"
+    }
+}

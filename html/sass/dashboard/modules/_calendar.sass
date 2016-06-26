@@ -1,0 +1,66 @@
+$calendar-caption-span-height: $title-height/6
+
+.calendar
+	margin: 0 $horizontal-span 0 0
+	padding: 0
+
+	table
+		margin-top: -$title-height
+
+		caption
+			margin: $calendar-caption-span-height 0
+
+			font-family: $header-font-family
+
+			span
+				margin: 0
+				padding: 0
+
+				&.caption_year
+					color: $blue
+					line-height: $calendar-caption-span-height
+
+				&.caption_month
+					font-size: calcFontsize(6)
+					line-height: $calendar-caption-span-height*3
+
+		td, th
+			margin: $vertical-span 0
+			padding: 0
+
+		th
+			border-bottom: 1px solid $pink
+
+		td
+			cursor: pointer
+
+		td.complete
+			+border-radius( 0px )
+			+background( linear-gradient( -45deg, transparent 49%, $blue 49%, $blue 50%, transparent 50%, transparent ) )
+
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		text-align: center
+
+		li
+			a
+				margin: 0
+				padding: 0
+				font-family: $icon-font-family
+				font-size: 50px
+
+				&:link, &:visited, &:hover
+					text-decoration: none
+
+				&:before
+					color: $pink
+					line-height: $title-height
+
+			&.next
+				a:before
+					content: $calendar-next-icon-text
+			&.prev
+				a:before
+					content: $calendar-prev-icon-text

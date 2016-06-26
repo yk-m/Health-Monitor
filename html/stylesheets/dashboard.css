@@ -1,0 +1,570 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+/*!
+ *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: "ElegantIcons";
+  src: url("../fonts/ElegantIcons.eot");
+  src: url("../fonts/ElegantIcons.eot?#iefix") format("embedded-opentype"), url("../fonts/ElegantIcons.woff") format("woff"), url("../fonts/ElegantIcons.ttf") format("truetype"), url("../fonts/ElegantIcons.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes bgscroll-vertical {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -150em;
+  }
+}
+@keyframes bgscroll-vartical {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -150em;
+  }
+}
+@-webkit-keyframes bgscroll-horizontal {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200em 0;
+  }
+}
+@keyframes bgscroll-horizontal {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200em 0;
+  }
+}
+/* line 1, ../sass/init/_base.sass */
+* {
+  font-size: 15px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 5, ../sass/init/_base.sass */
+body {
+  font: normal 1rem "Raleway", sans-serif;
+  color: #F9F4E8;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, ../sass/init/_base.sass */
+p {
+  margin: 12px 0;
+}
+
+/* line 15, ../sass/init/_base.sass */
+h1 {
+  font: normal 3rem "Josefin Sans", sans-serif;
+}
+
+/* line 18, ../sass/init/_base.sass */
+h2 {
+  font: normal 2.55rem "Josefin Sans", sans-serif;
+}
+
+/* line 21, ../sass/init/_base.sass */
+h3 {
+  font: normal 2.1675rem "Josefin Sans", sans-serif;
+}
+
+/* line 24, ../sass/init/_base.sass */
+a {
+  color: #91a8d0;
+  text-decoration: underline;
+}
+/* line 28, ../sass/init/_base.sass */
+a:visited {
+  color: #91a8d0;
+}
+
+/* line 1, ../sass/init/_form.sass */
+input {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 12px 20px;
+  background: rgba(249, 244, 232, 0.5);
+  border: 1px solid transparent;
+  outline: none;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font: normal 1rem "Raleway", sans-serif;
+}
+/* line 61, ../../../../../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/css3/_user-interface.scss */
+input:-moz-placeholder {
+  color: rgba(85, 85, 80, 0.5);
+}
+/* line 64, ../../../../../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/css3/_user-interface.scss */
+input::-moz-placeholder {
+  color: rgba(85, 85, 80, 0.5);
+}
+/* line 67, ../../../../../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/css3/_user-interface.scss */
+input:-ms-input-placeholder {
+  color: rgba(85, 85, 80, 0.5);
+}
+/* line 56, ../../../../../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/css3/_user-interface.scss */
+input::-webkit-input-placeholder {
+  color: rgba(85, 85, 80, 0.5);
+}
+/* line 17, ../sass/init/_form.sass */
+input:focus {
+  border: 1px solid rgba(249, 244, 232, 0.6);
+  -moz-box-shadow: 0 0 10px 5px rgba(249, 244, 232, 0.5);
+  -webkit-box-shadow: 0 0 10px 5px rgba(249, 244, 232, 0.5);
+  box-shadow: 0 0 10px 5px rgba(249, 244, 232, 0.5);
+}
+
+/* line 22, ../sass/init/_form.sass */
+input[type="button"] {
+  width: 140px;
+  color: #555550;
+  background: rgba(249, 244, 232, 0.6);
+}
+
+/* line 29, ../sass/init/_form.sass */
+input[type="submit"], input[type="button"] {
+  cursor: pointer;
+}
+
+/* line 34, ../sass/init/_form.sass */
+.horizontal-form * {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+/* line 38, ../sass/init/_form.sass */
+.horizontal-form *:last-child {
+  margin-right: 0;
+}
+
+/* line 42, ../sass/init/_form.sass */
+.loading {
+  display: none;
+}
+/* line 45, ../sass/init/_form.sass */
+.loading span {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+/* line 49, ../sass/init/_form.sass */
+.loading:after {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 55px 0;
+  content: "";
+  font-family: "ElegantIcons", sans-serif;
+  font-size: 30px;
+  color: #F9F4E8;
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+/* line 2, ../sass/init/_table.sass */
+table {
+  margin: 0 auto;
+  border: none;
+  border-collapse: collapse;
+}
+
+/* line 7, ../sass/init/_table.sass */
+table caption {
+  font-weight: normal;
+}
+
+/* line 10, ../sass/init/_table.sass */
+table td, table th {
+  text-align: center;
+  font-weight: normal;
+}
+
+/* line 1, ../sass/dashboard/_base.sass */
+body {
+  background: #F9F4E8;
+  color: #555550;
+}
+
+/* line 1, ../sass/dashboard/_layout.sass */
+header {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* line 9, ../sass/dashboard/_layout.sass */
+.wrapper {
+  width: 980px;
+  *zoom: 1;
+}
+/* line 134, ../sass/_config.sass */
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 14, ../sass/dashboard/_layout.sass */
+.wrapper > section {
+  float: left;
+}
+
+/* line 18, ../sass/dashboard/_layout.sass */
+.calendar {
+  width: 300px;
+}
+/* line 22, ../sass/dashboard/_layout.sass */
+.calendar table caption span {
+  display: block;
+}
+/* line 25, ../sass/dashboard/_layout.sass */
+.calendar table td, .calendar table th {
+  height: 42.85714px;
+  width: 42.85714px;
+}
+/* line 29, ../sass/dashboard/_layout.sass */
+.calendar ul {
+  *zoom: 1;
+  height: 60px;
+}
+/* line 134, ../sass/_config.sass */
+.calendar ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 33, ../sass/dashboard/_layout.sass */
+.calendar ul li {
+  display: block;
+}
+/* line 36, ../sass/dashboard/_layout.sass */
+.calendar ul li a {
+  height: 60px;
+  width: 60px;
+}
+/* line 40, ../sass/dashboard/_layout.sass */
+.calendar ul li.prev {
+  float: left;
+}
+/* line 43, ../sass/dashboard/_layout.sass */
+.calendar ul li.next {
+  float: right;
+}
+
+/* line 47, ../sass/dashboard/_layout.sass */
+.graph_month {
+  width: 620px;
+}
+/* line 50, ../sass/dashboard/_layout.sass */
+.graph_month #weight {
+  width: 580px;
+  height: 228px;
+}
+
+/* line 1, ../sass/dashboard/modules/_header.sass */
+header {
+  margin: 0;
+  background: linear-gradient(90deg, #f7cac9, #91a8d0, #f7cac9) 0 0/200em auto repeat;
+  -webkit-animation: bgscroll-horizontal 100s linear infinite;
+  animation: bgscroll-horizontal 100s linear infinite;
+}
+/* line 6, ../sass/dashboard/modules/_header.sass */
+header h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px 20px;
+  padding: 0;
+  font: normal 2.1675rem "Josefin Sans", sans-serif;
+  color: #F9F4E8;
+  line-height: 36px;
+}
+/* line 30, ../sass/_config.sass */
+header .logout span {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+/* line 34, ../sass/_config.sass */
+header .logout:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px 20px;
+  padding: 0;
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  text-align: center;
+  background: #F9F4E8;
+  border: none;
+  -moz-border-radius: 36px;
+  -webkit-border-radius: 36px;
+  border-radius: 36px;
+  font-family: "ElegantIcons", sans-serif;
+  font-size: 20px;
+  content: "";
+  color: #91a8d0;
+}
+
+/* line 3, ../sass/dashboard/modules/_calendar.sass */
+/* line 2, ../sass/dashboard/modules/_calendar.scss */
+.calendar {
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+/* line 7, ../sass/dashboard/modules/_calendar.sass */
+/* line 7, ../sass/dashboard/modules/_calendar.scss */
+.calendar table {
+  margin-top: -60px;
+}
+
+/* line 10, ../sass/dashboard/modules/_calendar.sass */
+/* line 11, ../sass/dashboard/modules/_calendar.scss */
+.calendar table caption {
+  margin: 10px 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* line 15, ../sass/dashboard/modules/_calendar.sass */
+/* line 16, ../sass/dashboard/modules/_calendar.scss */
+.calendar table caption span {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 19, ../sass/dashboard/modules/_calendar.sass */
+/* line 21, ../sass/dashboard/modules/_calendar.scss */
+.calendar table caption span.caption_year {
+  color: #91a8d0;
+  line-height: 10px;
+}
+
+/* line 23, ../sass/dashboard/modules/_calendar.sass */
+/* line 26, ../sass/dashboard/modules/_calendar.scss */
+.calendar table caption span.caption_month {
+  font-size: 1.33112rem;
+  line-height: 30px;
+}
+
+/* line 27, ../sass/dashboard/modules/_calendar.sass */
+/* line 31, ../sass/dashboard/modules/_calendar.scss */
+.calendar table td, .calendar table th {
+  margin: 12px 0;
+  padding: 0;
+}
+
+/* line 31, ../sass/dashboard/modules/_calendar.sass */
+/* line 36, ../sass/dashboard/modules/_calendar.scss */
+.calendar table th {
+  border-bottom: 1px solid #f7cac9;
+}
+
+/* line 34, ../sass/dashboard/modules/_calendar.sass */
+/* line 40, ../sass/dashboard/modules/_calendar.scss */
+.calendar table td {
+  cursor: pointer;
+}
+
+/* line 37, ../sass/dashboard/modules/_calendar.sass */
+/* line 44, ../sass/dashboard/modules/_calendar.scss */
+.calendar table td.complete {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjEuMCIgeTE9IjEuMCIgeDI9IjAuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSI0OSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI0OSUiIHN0b3AtY29sb3I9IiM5MWE4ZDAiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzkxYThkMCIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=");
+  background: -moz-linear-gradient(135deg, transparent 49%, #91a8d0 49%, #91a8d0 50%, transparent 50%, transparent);
+  background: -webkit-linear-gradient(135deg, transparent 49%, #91a8d0 49%, #91a8d0 50%, transparent 50%, transparent);
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 49%, #91a8d0 49%, #91a8d0 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+}
+
+/* line 41, ../sass/dashboard/modules/_calendar.sass */
+/* line 54, ../sass/dashboard/modules/_calendar.scss */
+.calendar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+/* line 48, ../sass/dashboard/modules/_calendar.sass */
+/* line 61, ../sass/dashboard/modules/_calendar.scss */
+.calendar ul li a {
+  margin: 0;
+  padding: 0;
+  font-family: "ElegantIcons", sans-serif;
+  font-size: 50px;
+}
+
+/* line 54, ../sass/dashboard/modules/_calendar.sass */
+/* line 68, ../sass/dashboard/modules/_calendar.scss */
+.calendar ul li a:link, .calendar ul li a:visited, .calendar ul li a:hover {
+  text-decoration: none;
+}
+
+/* line 57, ../sass/dashboard/modules/_calendar.sass */
+/* line 72, ../sass/dashboard/modules/_calendar.scss */
+.calendar ul li a:before {
+  color: #f7cac9;
+  line-height: 60px;
+}
+
+/* line 62, ../sass/dashboard/modules/_calendar.sass */
+/* line 77, ../sass/dashboard/modules/_calendar.scss */
+.calendar ul li.next a:before {
+  content: "L";
+}
+
+/* line 65, ../sass/dashboard/modules/_calendar.sass */
+/* line 81, ../sass/dashboard/modules/_calendar.scss */
+.calendar ul li.prev a:before {
+  content: "K";
+}
+
+/* line 1, ../sass/dashboard/modules/_graph.sass */
+.graph_month {
+  margin: 0 0 36px 0;
+  padding: 0 20px;
+}
+/* line 5, ../sass/dashboard/modules/_graph.sass */
+.graph_month h1 {
+  margin: 0;
+  line-height: 60px;
+  font-size: 1.33112rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* line 1, ../sass/dashboard/modules/_modal.sass */
+.modal-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* line 14, ../sass/dashboard/modules/_modal.sass */
+.modal {
+  display: none;
+}
+/* line 17, ../sass/dashboard/modules/_modal.sass */
+.modal .modal-content {
+  position: fixed;
+  top: 96px;
+  left: 50%;
+  margin: 0 0 0 -310px;
+  width: 620px;
+  padding: 48px 80px;
+  background: #f7cac9;
+  z-index: 500;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 50px 50px rgba(85, 85, 80, 0.2);
+}
+/* line 33, ../sass/dashboard/modules/_modal.sass */
+.modal .modal-content h1 {
+  color: #F9F4E8;
+}
+/* line 36, ../sass/dashboard/modules/_modal.sass */
+.modal .modal-content .modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+/* line 52, ../sass/dashboard/modules/_modal.sass */
+.modal .modal-content .modal-close span {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+/* line 56, ../sass/dashboard/modules/_modal.sass */
+.modal .modal-content .modal-close:after {
+  content: "/";
+  font-family: "ElegantIcons", sans-serif;
+  font-size: 30px;
+  color: #F9F4E8;
+}
+
+/* line 2, ../sass/dashboard/modules/_form.sass */
+#input_area span {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  width: 60px;
+}
+/* line 7, ../sass/dashboard/modules/_form.sass */
+#input_area input[type="text"] {
+  width: 220px;
+}
+/* line 10, ../sass/dashboard/modules/_form.sass */
+#input_area input[name="add"] {
+  margin-right: 0;
+}
+/* line 13, ../sass/dashboard/modules/_form.sass */
+#input_area input[name="delete"] {
+  display: none;
+}
+/* line 17, ../sass/dashboard/modules/_form.sass */
+#input_area.deletable input[name="add"] {
+  margin-right: 20px;
+}
+/* line 20, ../sass/dashboard/modules/_form.sass */
+#input_area.deletable input[type="button"] {
+  width: 60px;
+  padding: 12px 0;
+}
+
+/* line 7, ../sass/dashboard/_module.sass */
+.wrapper {
+  margin: 96px auto 0;
+  padding: 12px 20px;
+}
